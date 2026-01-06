@@ -4,12 +4,13 @@ const ProjectsSection = () => {
     const [selectedProject, setSelectedProject] = useState(null);
     const [activeTab, setActiveTab] = useState('All');
 
+
     const projects = [
         {
             id: 1,
             name: "Blood Donation Bridge",
             category: "Full Stack Web",
-            image: "/public/images/p1.png",
+            image: "/images/p1.png",
             shortDesc:
                 "A full-stack platform that connects blood donors with people in need through a structured and reliable system.",
             fullDesc:
@@ -35,7 +36,7 @@ const ProjectsSection = () => {
             id: 2,
             name: "Import Export Platform UI",
             category: "Frontend",
-            image: "/public/images/p2.png", // replace with your image path
+            image: "/images/p2.png", // replace with your image path
             shortDesc:
                 "A responsive frontend UI showcasing an import-export business platform with clean layout and navigation.",
             fullDesc:
@@ -52,7 +53,7 @@ const ProjectsSection = () => {
             id: 3,
             name: "Care Nest – Care Services Website",
             category: "Frontend",
-            image: "/public/images/p3.png", // replace with your image path
+            image: "/images/p3.png", // replace with your image path
             shortDesc:
                 "A service-oriented website designed to showcase caregiving services with a clean and user-friendly UI.",
             fullDesc:
