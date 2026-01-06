@@ -3,8 +3,7 @@ import React from 'react';
 const Contact = () => {
     // Replace these with your actual details
     const contactInfo = {
-        email: "yourname@example.com",
-        phone: "+880 1234 567 890",
+        email: "zannatulmawa38@gmail.com",
         whatsapp: "+8801234567890", // Format: country code + number without '+' or spaces for the link
     };
 
@@ -39,14 +38,7 @@ const Contact = () => {
                             </div>
                         </a>
 
-                        {/* Phone Card */}
-                        <a href={`tel:${contactInfo.phone}`} className="bg-[#111827]/50 border border-white/5 p-6 rounded-2xl flex items-center gap-4 hover:border-blue-500/50 transition-all group">
-                            <div className="w-12 h-12 bg-blue-600/10 text-blue-500 flex items-center justify-center rounded-xl text-xl group-hover:bg-blue-600 group-hover:text-white transition-all">📞</div>
-                            <div>
-                                <p className="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Phone Number</p>
-                                <p className="text-sm font-medium">{contactInfo.phone}</p>
-                            </div>
-                        </a>
+
 
                         {/* WhatsApp Card */}
                         <a href={`https://wa.me/${contactInfo.whatsapp}`} target="_blank" rel="noreferrer" className="bg-[#111827]/50 border border-white/5 p-6 rounded-2xl flex items-center gap-4 hover:border-green-500/50 transition-all group">

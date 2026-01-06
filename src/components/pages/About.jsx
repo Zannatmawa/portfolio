@@ -9,7 +9,7 @@ const AboutMe = () => {
         { value: "100%", label: "Fast Learner", icon: "⚡" }
     ];
 
-    const techStack = ['React', 'TypeScript', 'Node.js', 'Python', 'Firebase', 'Git', 'Tailwind CSS', 'DaisyUI'];
+    const techStack = ['React', 'Node.js', 'Python', 'Firebase', 'Git', 'Tailwind CSS', 'DaisyUI'];
 
     return (
         <section id="about" className="min-h-screen bg-[#0a0f1a] text-white py-20 px-6 md:px-12">
@@ -18,7 +18,7 @@ const AboutMe = () => {
                 {/* Header Section */}
                 <div className="mb-16">
                     <div className="flex items-center gap-3 mb-2">
-                        <div className="h-[2px] w-12 bg-blue-600"></div>
+                        <div className="h-2 w-12 bg-blue-600"></div>
                         <span className="text-blue-500 text-xs font-bold uppercase tracking-widest">My Story</span>
                     </div>
                     <h1 className="text-6xl font-extrabold tracking-tight">About Me</h1>
@@ -54,7 +54,7 @@ const AboutMe = () => {
                         </h2>
 
                         <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-                            Based in [Your Location], I am a passionate Junior Developer who recently completed an intensive journey into the world of Full Stack development. I love turning complex problems into simple, beautiful, and intuitive designs.
+                            Based in Chittagong,Bangladesh, I am a passionate Junior Developer who recently completed an intensive journey into the world of Full Stack development. I love turning complex problems into simple, beautiful, and intuitive designs.
                         </p>
 
                         {/* Stats Grid */}
@@ -81,9 +81,7 @@ const AboutMe = () => {
                             <p>
                                 <strong className="text-white">What I Enjoy:</strong> I’m particularly drawn to <span className="text-blue-400">Frontend Development</span> and UI/UX design. Creating an interface that users find easy to navigate is like solving a puzzle for me. I love the logic of JavaScript and the artistic side of CSS.
                             </p>
-                            <p>
-                                <strong className="text-white">Outside the Code:</strong> When I'm not staring at a terminal, you can find me [playing football/sketching/gaming]. These hobbies keep my creativity flowing and help me return to my keyboard with a fresh perspective. I believe a balanced life makes a better programmer!
-                            </p>
+
                         </div>
 
                         {/* Tech Stack Chips */}

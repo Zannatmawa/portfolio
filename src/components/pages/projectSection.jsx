@@ -7,44 +7,66 @@ const ProjectsSection = () => {
     const projects = [
         {
             id: 1,
-            name: "EcoShop E-commerce",
-            category: "Web",
-            image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1000&auto=format&fit=crop",
-            shortDesc: "A full-featured digital storefront with real-time cart management.",
-            fullDesc: "EcoShop is a high-performance e-commerce platform designed for modern retailers. It features a seamless checkout flow, persistent cart logic, and integrated payment processing.",
-            stack: ["React", "Tailwind CSS", "Firebase", "Stripe API"],
-            liveLink: "https://ecoshop-demo.netlify.app",
-            githubLink: "https://github.com/user/ecoshop-client",
-            challenges: "Managing complex state across the application for the shopping cart while ensuring fast page transitions and SEO optimization.",
-            futurePlans: "Integrating a recommendation engine based on user browsing history and adding multi-language support."
+            name: "Blood Donation Bridge",
+            category: "Full Stack Web",
+            image: "/public/images/p1.png",
+            shortDesc:
+                "A full-stack platform that connects blood donors with people in need through a structured and reliable system.",
+            fullDesc:
+                "Blood Donation Bridge is a full-stack web application designed to simplify and manage blood donation activities. The platform enables users to register as donors, request blood, and manage donor information efficiently, ensuring quick and reliable connections during emergencies.",
+            stack: [
+                "React",
+                "JavaScript",
+                "Tailwind CSS",
+                "DaisyUI",
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "JWT / Firebase Authentication",
+            ],
+            liveLink: "https://github.com/Zannatmawa/blood-donation-client",
+            githubLink: "https://github.com/Zannatmawa/blood-donation-client",
+            challenges:
+                "Designing secure authentication and managing donor-request data flow while maintaining performance and scalability.",
+            futurePlans:
+                "Adding location-based donor matching, notification alerts, and role-based dashboards for admins and donors.",
         },
         {
             id: 2,
-            name: "TaskMaster Pro",
-            category: "Web",
-            image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?q=80&w=1000&auto=format&fit=crop",
-            shortDesc: "Productivity tool for tracking sprints and team task distribution.",
-            fullDesc: "A collaborative task management application that allows teams to organize projects into boards, assign tasks, and track deadlines using an intuitive drag-and-drop interface.",
-            stack: ["React", "Node.js", "MongoDB", "Framer Motion"],
-            liveLink: "https://taskmaster-pro.vercel.app",
-            githubLink: "https://github.com/user/taskmaster-client",
-            challenges: "Implementing a smooth drag-and-drop experience that stays synchronized with the database in real-time.",
-            futurePlans: "Adding automated email notifications for approaching deadlines and a dark mode toggle for better accessibility."
+            name: "Import Export Platform UI",
+            category: "Frontend",
+            image: "/public/images/p2.png", // replace with your image path
+            shortDesc:
+                "A responsive frontend UI showcasing an import-export business platform with clean layout and navigation.",
+            fullDesc:
+                "This project is a static, client-side web application built to represent an import-export business platform. It focuses on modern UI design, responsive layout, and structured content presentation for products and services.",
+            stack: ["HTML5", "CSS3", "JavaScript"],
+            liveLink: "https://import-export-app-8fcaa.web.app/",
+            githubLink: "https://github.com/Zannatmawa/import-export-client",
+            challenges:
+                "Creating a professional and responsive layout using pure HTML and CSS while maintaining design consistency.",
+            futurePlans:
+                "Adding dynamic content loading, product filtering, and backend integration for real-world usage.",
         },
         {
             id: 3,
-            name: "WeatherWave App",
-            category: "Mobile",
-            image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=1000&auto=format&fit=crop",
-            shortDesc: "Clean and minimal weather forecasting app using live API data.",
-            fullDesc: "A sleek, mobile-responsive weather application that provides accurate local forecasts, hourly updates, and 7-day outlooks using the OpenWeather API.",
-            stack: ["React", "OpenWeather API", "DaisyUI", "Vite"],
-            liveLink: "https://weatherwave-live.web.app",
-            githubLink: "https://github.com/user/weather-client",
-            challenges: "Handling asynchronous API calls gracefully while managing edge cases like user location permission denials.",
-            futurePlans: "Adding interactive weather maps using Leaflet.js and implementing custom alerts for extreme weather conditions."
-        }
+            name: "Care Nest – Care Services Website",
+            category: "Frontend",
+            image: "/public/images/p3.png", // replace with your image path
+            shortDesc:
+                "A service-oriented website designed to showcase caregiving services with a clean and user-friendly UI.",
+            fullDesc:
+                "Care Nest is a static website created to present caregiving services such as baby care, elderly care, and sick care. The project focuses on clean UI design, intuitive navigation, and a real-world service concept suitable for portfolio presentation.",
+            stack: ["HTML5", "CSS3", "JavaScript"],
+            liveLink: "https://care-nest-dusky.vercel.app/",
+            githubLink: "https://github.com/Zannatmawa/care-nest",
+            challenges:
+                "Structuring service content clearly while keeping the design minimal, responsive, and trustworthy.",
+            futurePlans:
+                "Adding an appointment booking system, CMS integration, and accessibility enhancements.",
+        },
     ];
+
 
     const filteredProjects = activeTab === 'All'
         ? projects
@@ -71,8 +93,8 @@ const ProjectsSection = () => {
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
                                 className={`px-6 py-2 rounded-lg text-sm font-medium transition-all ${activeTab === tab
-                                        ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/20'
-                                        : 'text-gray-400 hover:text-white'
+                                    ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/20'
+                                    : 'text-gray-400 hover:text-white'
                                     }`}
                             >
                                 {tab}
